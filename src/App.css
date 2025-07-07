@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcb69f;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.app-header {
+  font-size: 36px;
+  color: #ff6f61;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.addTask {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.addTask input {
+  flex: 1;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #ffb199;
+  background-color: #fff3ec;
+  transition: all 0.3s ease;
+}
+
+.addTask input:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.addTask button {
+  padding: 14px 20px;
+  background-color: #ff6f61;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addTask button:hover {
+  background-color: #e75b50;
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+  color: #aaa;
+  opacity: 0.7;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff0e6;
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 111, 97, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.list-item:hover {
+  transform: scale(1.02);
+}
+
+.list-item input[type="checkbox"] {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  accent-color: #ff6f61;
+  cursor: pointer;
+}
+
+.task-name {
+  font-size: 18px;
+  color: #444;
+  text-align: left;
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #ff6f61;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  color: #d44a3c;
+}
